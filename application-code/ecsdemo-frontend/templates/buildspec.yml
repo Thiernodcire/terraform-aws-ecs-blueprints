@@ -20,6 +20,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker tag $REPO_URL $REPO_URL:$IMAGE_TAG
+      - docker push $REPO_URL:$IMAGE_TAG
       - echo Preparing spec files in new folder
       - mkdir artifacts
       - cp application-code/ecsdemo-frontend/templates/imagedefinition.json artifacts/imagedefinition.json
