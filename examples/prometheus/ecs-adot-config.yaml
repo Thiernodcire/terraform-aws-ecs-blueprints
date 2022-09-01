@@ -28,9 +28,9 @@ processors:
 
 exporters:
   awsprometheusremotewrite:
-    endpoint: "AMP_WORKSPACE_REMOTE_WRITE_ENDPOINT"
+    endpoint: "https://aps-workspaces.us-east-1.amazonaws.com/workspaces/ws-5285c7cd-12bf-47b5-95fa-7c87bb4e465e/api/v1/remote_write"
     aws_auth:
-      region: "AMP_WORKSPACE_REGION"
+      region: "us-east-1"
       service: "aps"
   logging:
     loglevel: debug
