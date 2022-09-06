@@ -1,0 +1,3 @@
+[submodule "application-code/ecs-demo-php-simple-app"]
+	path = application-code/ecs-demo-php-simple-app
+	url = https://github.com/Thiernodcire/ecs-demo-php-simple-app.git
