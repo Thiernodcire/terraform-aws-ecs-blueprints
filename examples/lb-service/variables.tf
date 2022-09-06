@@ -53,13 +53,13 @@ variable "ecs_task_execution_role_name" {
 variable "buildspec_path" {
   description = "The location of the buildspec file"
   type        = string
-  default     = "./application-code/ecsdemo-frontend/templates/buildspec.yml"
+  default     = "./application-code/https://github.com/Thiernodcire/ecs-demo-php-simple-app/tree/0082d82cf953c3de73ad41fddbdbb2d48aab8da1/buildspec.yml"
 }
 
 variable "folder_path" {
   description = "The location of the application code and Dockerfile files"
   type        = string
-  default     = "./application-code/ecsdemo-frontend/."
+  default     = "./application-code/https://github.com/Thiernodcire/ecs-demo-php-simple-app/tree/0082d82cf953c3de73ad41fddbdbb2d48aab8da1/."
 }
 
 variable "repository_owner" {
@@ -88,7 +88,7 @@ variable "github_token_secret_name" {
 variable "service_name" {
   description = "The service name"
   type        = string
-  default     = "ecsdemo-frontend"
+  default     = "ecs-simple-php-service"
 }
 
 variable "namespace" {
@@ -154,13 +154,13 @@ variable "task_memory" {
 variable "container_name" {
   description = "The container name to use in service task definition"
   type        = string
-  default     = "ecsdemo-frontend"
+  default     = "ecs-simple-php-service"
 }
 
 variable "container_port" {
   description = "The container port to serve traffic"
   type        = number
-  default     = 3000
+  default     = 80
 }
 
 variable "container_protocol" {
